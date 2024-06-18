@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 import { StarIcon } from '../common/StarIcon';
+import NotFoundImgSrc from '../../lib/imggg.png';
+
 const ShowMainData = ({ image, name, rating, summary, genres }) => {
   <MainDataWrapper>
     <div className="img.wrap">
-      <img src={image ? image.original : '/imggg.png'} alt={name} />
+      <img src={image ? image.original : NotFoundImgSrc} alt={name} />
     </div>
 
     <DataSection>
